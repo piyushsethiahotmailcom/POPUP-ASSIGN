@@ -1,3 +1,35 @@
+.header{
+    background: #f6f6f6;
+    width: 100%;
+    position: absolute;
+    height: 70px;
+    top: 0;
+    left: 0;
+    padding-left: 15px; 
+    padding-top: 10 px;
+}
+
+.pageTitle{
+    font-size: large;
+    font-weight: 400;
+}
+
+.pageContent{
+    margin-top: 80px;
+    color: grey;
+    text-align: center;
+    position: relative;
+}
+
+.content{
+    font-size: smaller;
+    font-weight: 300;
+    position: fixed;
+    top: 35%;
+    width: 100%;
+    height: 100%;
+}
+
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -21,6 +53,7 @@
     border: 1px solid #888;
     width: 80%;
     height: 250px;
+    border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
@@ -37,7 +70,6 @@
     width: 90%;
     height: 180px;
     border:transparent;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
@@ -53,6 +85,22 @@
 @keyframes animatetop {
     from {right:-300px; opacity:0}
     to {right:0; opacity:1}
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
 }
 
 /* The Close Button */
@@ -78,22 +126,44 @@
 .modal-body {
     padding: 2px 16px;
     display: flex;
+    height: 
+    background: white;
+
 }
 
 .modal-body .left-view{
-    width:50%;
+    border-radius: 5px;
+    border: 1px solid #f5f5f5;
+    width:45%;
+    background: #f6f6f6;
+    margin-right: 2%;
 }
 
 .modal-body .right-view{
-    width: 50%;
+    width: 45%;
+    background: #f6f6f6;
 }
 
 .modal-body img{
-    width: 100px;
+    width: 70px;
     height: auto;
 }
 
-.modal-footer {
-    padding: 2px 16px;
+.imgClass{
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.ImgDetails{
+    display: block;
+    vertical-align: middle;
+    text-align: center;   
+}
+
+.ImgDetails a{
+    text-decoration-line: none;
+    text-align: center;
     color: black;
+    font-size: small;
 }
