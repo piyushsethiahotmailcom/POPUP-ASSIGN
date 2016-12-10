@@ -5,13 +5,13 @@
     height: 70px;
     top: 0;
     left: 0;
-    padding-left: 15px; 
-    padding-top: 10 px;
 }
 
 .pageTitle{
     font-size: large;
     font-weight: 400;
+    padding-top: 5px;
+    padding-left: 15px; 
 }
 
 .pageContent{
@@ -36,7 +36,7 @@
     z-index: 999; /* Sit on top */
     /*padding-top: 100px;*/ /* Location of the box */
     right:0;
-    bottom: calc(15% - 50px);
+    bottom: calc(10% - 50px);
     width: 40%; /* Full width */
     height: 300px;
     overflow: visible; /* Enable scroll if needed */
