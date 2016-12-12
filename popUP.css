@@ -145,17 +145,19 @@
 }
 
 .modal-body img{
-    width: 70px;
+    width: 35%;
     height: auto;
 }
 
 .imgClass{
+    height: 110px;
     display: inline-block;
     vertical-align: middle;
     text-align: center;
 }
 
 .ImgDetails{
+    height: 60px;
     display: block;
     vertical-align: middle;
     text-align: center;   
